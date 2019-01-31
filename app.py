@@ -6,7 +6,7 @@ def hello_admin():
    return 'Hello'
    
 @app.route('/testt')
-def hello_user(name):
+def hello_user():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
