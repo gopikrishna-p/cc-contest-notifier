@@ -10,7 +10,7 @@ def hello_admin():
    return 'Hello'
 
 @app.route('/')
-def index():
+def inde():
     return render_template('index.html')
 
 if __name__ == '__main__':
