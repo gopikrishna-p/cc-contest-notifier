@@ -9,9 +9,9 @@ def index():
 def hello_admin():
    return 'Hello'
 
-@app.route('/testt')
-def hello_user(name):
-    return redirect(url_for('index'))
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__':
    app.run(debug = True)
